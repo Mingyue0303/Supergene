@@ -2,7 +2,7 @@
 ```bash
 # 1.运行salmon
 conda activate salmon
-
-salmon quant -i Ogib -l A -1 OV329.safg_1.fq.gz -2 OV329.safg_2.fq.gz -p 6 -o OV329.safg
+salmon index -t braker4.transcripts.fa -i Ogib -p 16
+salmon quant -i Ogib -l A -1 aaa_1.fq.gz -2 aaa_2.fq.gz -p 6 -o aaa
 
 # 2.整理结果
